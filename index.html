@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="icon" href="blob:https://pasteboard.co/c2c62156-f911-4f4c-8d6c-3f32e57aebb5.ico">
+<style>
+.aligncenter {
+    text-align: center;
+}
+
+html {
+	background: url('https://imgur.com/22g8ntL.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+</style>
+</head>
+<body onkeypress="change(event)">
+<div class="aligncenter">
+<img src="https://imgur.com/hTK0dzQ.gif" id="guus" width=30% height=50%>
+</div>
+<br>
+<br>
+<div class="aligncenter">
+<img src="https://imgur.com/DzKgrNu.png" width=60% height=20%>
+</div>
+<br>
+<br>
+<div class="aligncenter" >
+<div class="gmap_canvas">
+<iframe width=30% height=50% align="center" id="gmap_canvas" src="https://maps.google.com/maps?q=Mount%20Guus&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight=0 marginwidth=0>
+</iframe>
+</div>
+<style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;text-align: center;}
+</style>
+</div>
+</body>
+<script>
+function change(event)
+{
+	var x = event.which || event.keyCode;
+	if (x == 103)
+	{
+		var g = document.getElementById("guus").src;
+		if (g === "https://imgur.com/hTK0dzQ.gif")
+		{
+			document.getElementById("guus").src = "https://imgur.com/GbokP05.gif";
+		}
+		else
+		{
+			document.getElementById("guus").src = "https://imgur.com/hTK0dzQ.gif";
+		}
+	}
+}
+</script>
+</html>
